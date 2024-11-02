@@ -35,6 +35,8 @@ public:
 
     unsigned int getHeight() { return mHeight; }
 
+    GLFWwindow *getWindow() { return mWindow; }
+
     void getCursorPos(double &xpos, double &ypos);
 
 private:

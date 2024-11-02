@@ -1,7 +1,7 @@
-file(GLOB_RECURSE SHADER ./ *.cpp )
+file(GLOB_RECURSE Shader ./ *.cpp )
 
-add_library(SHADER STATIC ${SHADER})
+add_library(Shader STATIC ${Shader})
 
-target_include_directories(SHADER PUBLIC ${CMAKE_SOURCE_DIR}/include)
+target_include_directories(Shader PUBLIC ${CMAKE_SOURCE_DIR}/include)
 
-target_include_directories(SHADER PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
+target_include_directories(Shader PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
